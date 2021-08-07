@@ -3,7 +3,6 @@ package com.digitalinnovationone.shoppingcart.model;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.redis.core.RedisHash;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import lombok.Data;
@@ -16,7 +15,7 @@ public class Cart {
     private Integer id;
     private List<Item> items;
 
-    public Cart() {
+    public Cart(Integer id2) {
     }
  
 }

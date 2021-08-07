@@ -15,7 +15,7 @@ public class ProductController {
     @Autowired
     private ProductRepository productRepository;
 
-    @PostMapping
+    @PostMapping // assim é melhor do que usar method.POST tem o mesmo efeito
     public Product create(@RequestBody Product product) {
         return productRepository.save(product);
     }
